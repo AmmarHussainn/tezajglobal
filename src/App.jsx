@@ -336,7 +336,7 @@ const App = () => {
               description="Rice, spice, white flour, eggs for diverse tastes."
             />
             <ServiceCard
-              image="https://images.unsplash.com/photo-1565373679940-7d6b04826a5e?w=800&q=80"
+              image="https://plus.unsplash.com/premium_photo-1663013522393-4c057b7a0b5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
               icon={<Snowflake className="w-10 h-10" />}
               title="Cold Storage"
               description="State-of-the-art cold storage for optimal freshness."
@@ -440,12 +440,12 @@ const App = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TeamCard name="M Ismail Niazi" role="CEO" />
-            <TeamCard name="Irfan Khalid" role="Managing Director" />
-            <TeamCard name="Bilal Mustafa" role="Director Procurement" />
-            <TeamCard name="Ahsan Rafi" role="Director Import" />
-            <TeamCard name="S A Hider Zai" role="Operation and Finance Director" />
-            <TeamCard name="Operations Team" role="Supply Chain & Logistics" />
+            <TeamCard name="M Ismail Niazi" role="CEO"  image="./ismail.png" />
+            <TeamCard name="Irfan Khalid" role="Managing Director" image="./irfan.png" />
+            <TeamCard name="Bilal Mustafa" role="Director Procurement" image="./bilalmustafa.png" />
+            <TeamCard name="Ahsan Rafi" role="Director Import" image="./ahsanrafiq.png" />
+            {/* <TeamCard name="S A Hider Zai" role="Operation and Finance Director" />
+            <TeamCard name="Operations Team" role="Supply Chain & Logistics"  /> */}
           </div>
         </div>
       </section>
@@ -478,14 +478,14 @@ const App = () => {
               office="Karachi Office"
               address="E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi"
               phone="+92 321 8297672"
-              gradient="from-teal-600 to-cyan-600"
+             gradient="from-emerald-600 to-teal-600"
             />
             <ContactCard
               country="Pakistan"
               office="Islamabad Office"
               address="House #1226, 3rd Road, G-10/4, Islamabad"
               phone="+92 346 5318763"
-              gradient="from-cyan-600 to-blue-600"
+              gradient="from-emerald-600 to-teal-600"
             />
           </div>
         </div>
@@ -598,23 +598,38 @@ const MarketCard = ({ image, icon, title }) => (
   </div>
 );
 
-const TeamCard = ({ name, role }) => (
-  <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all overflow-hidden group border border-gray-200">
-    <div className="bg-gradient-to-br from-slate-900 to-slate-800 p-8 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/20 rounded-full -mr-16 -mt-16"></div>
-      <div className="relative">
-        <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform">
-          <Users className="w-10 h-10 text-white" />
+const TeamCard = ({ name, role, image }) => (
+  <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group">
+    <div className="relative h-80 overflow-hidden">
+      {image ? (
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+        />
+      ) : (
+        <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
+          <Users className="w-24 h-24 text-emerald-400 opacity-50" />
+        </div>
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+      
+      {/* Decorative elements */}
+      \
+      
+      {/* Content */}
+      <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+        <h3 className="text-2xl font-bold text-white mb-2">{name}</h3>
+        <p className="text-emerald-400 font-semibold text-lg mb-3">{role}</p>
+        <div className="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="h-px flex-1 bg-white/30"></div>
+          <Award className="w-5 h-5 text-emerald-400" />
+          <div className="h-px flex-1 bg-white/30"></div>
         </div>
       </div>
     </div>
-    <div className="p-6 text-center">
-      <h3 className="text-xl font-bold text-slate-900 mb-2">{name}</h3>
-      <p className="text-emerald-600 font-medium">{role}</p>
-    </div>
   </div>
 );
-
 const ContactCard = ({ country, office, address, phone, gradient }) => (
   <div className={`bg-gradient-to-br ${gradient} p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105`}>
     <div className="mb-6">
