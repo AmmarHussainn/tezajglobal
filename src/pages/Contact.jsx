@@ -1,37 +1,55 @@
-import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Globe, MessageSquare, User, Building, Package, ArrowRight, Rss } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import React, { useState } from "react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+  Globe,
+  MessageSquare,
+  User,
+  Building,
+  Package,
+  ArrowRight,
+  Rss,
+} from "lucide-react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // Mock Navbar component
 
-
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    subject: "",
+    message: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = () => {
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      alert('Please fill in all required fields');
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      alert("Please fill in all required fields");
       return;
     }
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        subject: "",
+        message: "",
       });
     }, 3000);
   };
@@ -39,7 +57,7 @@ const ContactUs = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -47,67 +65,72 @@ const ContactUs = () => {
     {
       country: "Qatar",
       office: "Doha Office",
-      address: "Al Mirqab Mall, Al Mirqab Al Jadeed Street, Zone:39, Street: 840, Building: 53, Doha, Qatar",
+      address:
+        "Al Mirqab Mall, Al Mirqab Al Jadeed Street, Zone:39, Street: 840, Building: 53, Doha, Qatar",
       phone: "+974 31245783",
       email: "ahsan@tazejglobal.com",
-      email2: "irfan@tazejglobal.com",
+      // email2: "irfan@tazejglobal.com",
       hours: "Sun - Thu: 8:00 AM - 6:00 PM",
-       website : "www.tazejglobal.com",
-      image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=80"
+      website: "www.tazejglobal.com",
+      image:
+        "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=80",
     },
     {
       country: "Pakistan",
       office: "Karachi Office",
-      address: "E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi",
+      address:
+        "E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi",
       phone: "+92 321 8297672",
-        email: "ahsan@tazejglobal.com",
+      // email: "ahsan@tazejglobal.com",
       email2: "irfan@tazejglobal.com",
       hours: "Mon - Sat: 9:00 AM - 6:00 PM",
-      website : "www.tazejglobal.com",
-      image: "https://images.unsplash.com/photo-1606511490662-b2c5be7d95a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2025"
+      website: "www.tazejglobal.com",
+      image:
+        "https://images.unsplash.com/photo-1606511490662-b2c5be7d95a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2025",
     },
     {
       country: "Pakistan",
       office: "Islamabad Office",
       address: "House #1226, 3rd Road, G-10/4, Islamabad",
       phone: "+92 346 5318763",
-       email: "ahsan@tazejglobal.com",
-      email2: "irfan@tazejglobal.com",
+      email: "ahsan@tazejglobal.com",
+      // email2: "irfan@tazejglobal.com",
       hours: "Mon - Sat: 9:00 AM - 6:00 PM",
-      website : "www.tazejglobal.com",
-      image: "https://images.unsplash.com/photo-1608020932658-d0e19a69580b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
-    }
+      website: "www.tazejglobal.com",
+      image:
+        "https://images.unsplash.com/photo-1608020932658-d0e19a69580b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
+    },
   ];
 
   const contactReasons = [
     {
       icon: <Package />,
       title: "Bulk Orders",
-      description: "Large-scale distribution inquiries"
+      description: "Large-scale distribution inquiries",
     },
     {
       icon: <Building />,
       title: "Partnership",
-      description: "Business collaboration opportunities"
+      description: "Business collaboration opportunities",
     },
     {
       icon: <Globe />,
       title: "International",
-      description: "Global sourcing inquiries"
+      description: "Global sourcing inquiries",
     },
     {
       icon: <MessageSquare />,
       title: "Support",
-      description: "General questions and support"
-    }
+      description: "General questions and support",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-    <Navbar/>
+      <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-slate-900 via-slate-800 to-emerald-900 flex items-center overflow-hidden">
+      <section className="relative sm:h-96 sm:!p-0 py-40 bg-gradient-to-r from-slate-900 via-slate-800 to-emerald-900 flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
             src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1920&q=80"
@@ -116,18 +139,27 @@ const ContactUs = () => {
           />
         </div>
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+              backgroundSize: "40px 40px",
+            }}
+          ></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="inline-block mb-6 px-4 py-2 bg-emerald-500/20 border border-emerald-500/50 rounded-full">
-            <span className="text-emerald-400 text-sm font-semibold">GET IN TOUCH</span>
+            <span className="text-emerald-400 text-sm font-semibold">
+              GET IN TOUCH
+            </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Contact Us</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
+            Contact Us
+          </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We're here to help. Reach out to us through any of our office locations or send us a message
+            We're here to help. Reach out to us through any of our office
+            locations or send us a message
           </p>
         </div>
       </section>
@@ -337,13 +369,16 @@ const ContactUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
-              <span className="text-emerald-700 text-sm font-semibold">OUR LOCATIONS</span>
+              <span className="text-emerald-700 text-sm font-semibold">
+                OUR LOCATIONS
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Visit Our Offices
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're strategically located to serve you better across multiple regions
+              We're strategically located to serve you better across multiple
+              regions
             </p>
           </div>
 
@@ -367,7 +402,10 @@ const ContactUs = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="group px-8 py-4 bg-white text-emerald-600 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl flex items-center justify-center">
               Call Now
-              <Phone className="ml-2 group-hover:scale-110 transition-transform" size={20} />
+              <Phone
+                className="ml-2 group-hover:scale-110 transition-transform"
+                size={20}
+              />
             </button>
             <button className="px-8 py-4 bg-emerald-700 text-white rounded-lg font-semibold text-lg hover:bg-emerald-800 transition-all flex items-center justify-center">
               Send Email
@@ -376,7 +414,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-<Footer/>
+      <Footer />
     </div>
   );
 };
@@ -401,7 +439,18 @@ const FeaturePoint = ({ text }) => (
   </div>
 );
 
-const OfficeCard = ({ country, office, address, phone, email, email2, hours, gradient, image  ,website}) => (
+const OfficeCard = ({
+  country,
+  office,
+  address,
+  phone,
+  email,
+  email2,
+  hours,
+  gradient,
+  image,
+  website,
+}) => (
   <div className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2">
     <div className="relative h-64">
       <img
@@ -409,7 +458,9 @@ const OfficeCard = ({ country, office, address, phone, email, email2, hours, gra
         alt={office}
         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
       />
-      <div className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-80`}></div>
+      <div
+        className={`absolute inset-0 bg-gradient-to-t ${gradient} opacity-80`}
+      ></div>
       <div className="absolute top-4 left-4">
         <div className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
           <span className="text-white text-sm font-semibold">{country}</span>
@@ -428,20 +479,22 @@ const OfficeCard = ({ country, office, address, phone, email, email2, hours, gra
           <p className="text-gray-900 font-semibold text-sm">{phone}</p>
         </div>
 
-
-          <div className="flex items-center space-x-3">
-           
+        <div className="flex items-center space-x-3">
           <Rss className="text-emerald-600 flex-shrink-0" size={18} />
           <p className="text-gray-900 font-semibold text-sm">{website}</p>
         </div>
-        <div className="flex items-center space-x-3">
-          <Mail className="text-emerald-600 flex-shrink-0" size={18} />
-          <p className="text-gray-900 text-sm">{email}</p>
-        </div>
-         <div className="flex items-center space-x-3">
-          <Mail className="text-emerald-600 flex-shrink-0" size={18} />
-          <p className="text-gray-900 text-sm">{email2}</p>
-        </div>
+        {email && (
+          <div className="flex items-center space-x-3">
+            <Mail className="text-emerald-600 flex-shrink-0" size={18} />
+            <p className="text-gray-900 text-sm">{email}</p>
+          </div>
+        )}
+        {email2 && (
+          <div className="flex items-center space-x-3">
+            <Mail className="text-emerald-600 flex-shrink-0" size={18} />
+            <p className="text-gray-900 text-sm">{email2}</p>
+          </div>
+        )}
         <div className="flex items-center space-x-3">
           <Clock className="text-emerald-600 flex-shrink-0" size={18} />
           <p className="text-gray-600 text-sm">{hours}</p>
@@ -449,7 +502,10 @@ const OfficeCard = ({ country, office, address, phone, email, email2, hours, gra
       </div>
       <button className="mt-6 w-full px-4 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-teal-700 transition-all flex items-center justify-center group">
         Get Directions
-        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+        <ArrowRight
+          className="ml-2 group-hover:translate-x-1 transition-transform"
+          size={18}
+        />
       </button>
     </div>
   </div>

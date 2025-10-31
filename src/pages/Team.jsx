@@ -121,7 +121,7 @@ const Teams = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className='relative h-screen  overflow-hidden'>
+      <section className='relative sm:!p-0 py-36 sm:h-screen overflow-hidden'>
         <div className='absolute inset-0'>
           <img
             src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80'

@@ -100,7 +100,10 @@ const Home = () => {
       <Navbar />
 
       {/* Hero Section with Slideshow */}
-      <section id="home" className="relative sm:!p-0 py-36 sm:h-screen overflow-hidden">
+      <section
+        id="home"
+        className="relative sm:!p-0 py-36 sm:h-screen overflow-hidden"
+      >
         {heroSlides.map((slide, index) => (
           <div
             key={index}
@@ -519,7 +522,7 @@ const Home = () => {
               phone="+974 31245783"
               gradient="from-emerald-600 to-teal-600"
               email="ahsan@tazejglobal.com"
-              email2="irfan@tazejglobal.com"
+              // email2="irfan@tazejglobal.com"
               website="www.tazejglobal.com"
             />
             <ContactCard
@@ -528,7 +531,7 @@ const Home = () => {
               address="E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi"
               phone="+92 321 8297672"
               gradient="from-emerald-600 to-teal-600"
-              email="ahsan@tazejglobal.com"
+              // email="ahsan@tazejglobal.com"
               email2="irfan@tazejglobal.com"
               website="www.tazejglobal.com"
             />
@@ -539,7 +542,7 @@ const Home = () => {
               phone="+92 346 5318763"
               gradient="from-emerald-600 to-teal-600"
               email="ahsan@tazejglobal.com"
-              email2="irfan@tazejglobal.com"
+              // email2="irfan@tazejglobal.com"
               website="www.tazejglobal.com"
             />
           </div>
@@ -697,14 +700,18 @@ const ContactCard = ({
         <Rss className="text-white flex-shrink-0" />
         <p className="text-white/90 font-semibold">{website}</p>
       </div>
-      <div className="flex items-center space-x-3">
-        <Mail className="text-white flex-shrink-0" />
-        <p className="text-white/90 font-semibold">{email}</p>
-      </div>
-      <div className="flex items-center space-x-3">
-        <Mail className="text-white flex-shrink-0" />
-        <p className="text-white/90 font-semibold">{email2}</p>
-      </div>
+      {email && (
+        <div className="flex items-center space-x-3">
+          <Mail className="text-white flex-shrink-0" />
+          <p className="text-white/90 font-semibold">{email}</p>
+        </div>
+      )}
+      {email2 && (
+        <div className="flex items-center space-x-3">
+          <Mail className="text-white flex-shrink-0" />
+          <p className="text-white/90 font-semibold">{email2}</p>
+        </div>
+      )}
     </div>
   </div>
 );
