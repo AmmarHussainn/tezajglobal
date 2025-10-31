@@ -50,6 +50,7 @@ const ContactUs = () => {
       address: "Al Mirqab Mall, Al Mirqab Al Jadeed Street, Zone:39, Street: 840, Building: 53, Doha, Qatar",
       phone: "+974 31245783",
       email: "ahsan@tazejglobal.com",
+      email2: "irfan@tazejglobal.com",
       hours: "Sun - Thu: 8:00 AM - 6:00 PM",
        website : "www.tazejglobal.com",
       image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=800&q=80"
@@ -59,7 +60,8 @@ const ContactUs = () => {
       office: "Karachi Office",
       address: "E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi",
       phone: "+92 321 8297672",
-      email: "irfan@tazejglobal.com",
+        email: "ahsan@tazejglobal.com",
+      email2: "irfan@tazejglobal.com",
       hours: "Mon - Sat: 9:00 AM - 6:00 PM",
       website : "www.tazejglobal.com",
       image: "https://images.unsplash.com/photo-1606511490662-b2c5be7d95a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2025"
@@ -69,7 +71,8 @@ const ContactUs = () => {
       office: "Islamabad Office",
       address: "House #1226, 3rd Road, G-10/4, Islamabad",
       phone: "+92 346 5318763",
-      email: "irfan@tazejglobal.com",
+       email: "ahsan@tazejglobal.com",
+      email2: "irfan@tazejglobal.com",
       hours: "Mon - Sat: 9:00 AM - 6:00 PM",
       website : "www.tazejglobal.com",
       image: "https://images.unsplash.com/photo-1608020932658-d0e19a69580b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
@@ -398,7 +401,7 @@ const FeaturePoint = ({ text }) => (
   </div>
 );
 
-const OfficeCard = ({ country, office, address, phone, email, hours, gradient, image  ,website}) => (
+const OfficeCard = ({ country, office, address, phone, email, email2, hours, gradient, image  ,website}) => (
   <div className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2">
     <div className="relative h-64">
       <img
@@ -434,6 +437,10 @@ const OfficeCard = ({ country, office, address, phone, email, hours, gradient, i
         <div className="flex items-center space-x-3">
           <Mail className="text-emerald-600 flex-shrink-0" size={18} />
           <p className="text-gray-900 text-sm">{email}</p>
+        </div>
+         <div className="flex items-center space-x-3">
+          <Mail className="text-emerald-600 flex-shrink-0" size={18} />
+          <p className="text-gray-900 text-sm">{email2}</p>
         </div>
         <div className="flex items-center space-x-3">
           <Clock className="text-emerald-600 flex-shrink-0" size={18} />

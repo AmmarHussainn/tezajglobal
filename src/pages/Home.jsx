@@ -419,7 +419,8 @@ const Home = () => {
               phone="+974 31245783"
               gradient="from-emerald-600 to-teal-600"
                email= "ahsan@tazejglobal.com"
-                 website = "www.tazejglobal.com"
+               email2 = "irfan@tazejglobal.com"
+               website = "www.tazejglobal.com"
             />
             <ContactCard
               country="Pakistan"
@@ -428,6 +429,7 @@ const Home = () => {
               phone="+92 321 8297672"
              gradient="from-emerald-600 to-teal-600"
               email= "ahsan@tazejglobal.com"
+               email2 = "irfan@tazejglobal.com"
                  website = "www.tazejglobal.com"
             />
             <ContactCard
@@ -437,7 +439,8 @@ const Home = () => {
               phone="+92 346 5318763"
               gradient="from-emerald-600 to-teal-600"
                email= "ahsan@tazejglobal.com"
-                 website = "www.tazejglobal.com"
+                email2 = "irfan@tazejglobal.com"
+               website = "www.tazejglobal.com"
             />
           </div>
         </div>
@@ -567,7 +570,7 @@ const TeamCard = ({ name, role, image }) => (
     </div>
   </div>
 );
-const ContactCard = ({ country, office, address, phone, gradient ,email ,website}) => (
+const ContactCard = ({ country, office, address, phone, gradient ,email , email2,website}) => (
   <div className={`bg-gradient-to-br ${gradient} p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105`}>
     <div className="mb-6">
       <div className="inline-block px-3 py-1 bg-white/20 rounded-full mb-4">
@@ -593,6 +596,10 @@ const ContactCard = ({ country, office, address, phone, gradient ,email ,website
         <div className="flex items-center space-x-3">
           <Mail className="text-white flex-shrink-0"  />
           <p className="text-white/90 font-semibold">{email}</p>
+        </div>
+         <div className="flex items-center space-x-3">
+          <Mail className="text-white flex-shrink-0"  />
+          <p className="text-white/90 font-semibold">{email2}</p>
         </div>
     </div>
   </div>
