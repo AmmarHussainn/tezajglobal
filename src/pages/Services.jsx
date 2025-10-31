@@ -175,7 +175,7 @@ const Services = () => {
             <p className="text-xl text-gray-400">Trusted by Qatar's leading businesses</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <IndustryCard
               image="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600&q=80"
               title="Supermarkets"
@@ -191,11 +191,7 @@ const Services = () => {
               title="Hotels"
               description="Premium produce for hospitality industry leaders"
             />
-            <IndustryCard
-              image="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80"
-              title="Catering"
-              description="Bulk supply solutions for large-scale events"
-            />
+           
           </div>
         </div>
       </section>

@@ -129,7 +129,7 @@ const ContactUs = () => {
       </section>
 
       {/* Quick Contact Reasons */}
-      <section className="relative -mt-16 z-30">
+      {/* <section className="relative -mt-16 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {contactReasons.map((reason, index) => (
@@ -143,13 +143,13 @@ const ContactUs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Main Contact Section */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
+          
             <div>
               <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
                 <span className="text-emerald-700 text-sm font-semibold">SEND MESSAGE</span>
@@ -283,7 +283,7 @@ const ContactUs = () => {
               )}
             </div>
 
-            {/* Contact Info */}
+            
             <div>
               <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
                 <span className="text-emerald-700 text-sm font-semibold">CONTACT INFO</span>
@@ -326,7 +326,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Office Locations */}
       <section className="py-24 bg-gradient-to-br from-gray-50 to-emerald-50">

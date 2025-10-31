@@ -76,7 +76,7 @@ const AboutUs = () => {
                 <p>
                   Our journey began with a simple yet powerful vision: to bring the world's finest fresh produce to 
                   Qatar's tables. Today, we've grown into one of the most trusted names in the industry, serving 
-                  supermarkets, restaurants, hotels, and catering companies across the nation.
+                  supermarkets, restaurants, hotels across the nation.
                 </p>
                 <p>
                   What sets us apart is our unwavering commitment to quality, sustainability, and customer satisfaction. 

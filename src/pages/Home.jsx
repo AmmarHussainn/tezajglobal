@@ -344,11 +344,11 @@ const Home = () => {
               Target Market
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-              TAZEJ GLOBAL TRADING W.L.L proudly serves a diverse clientele across Qatar, including supermarkets, restaurants, hotels, and catering companies.
+              TAZEJ GLOBAL TRADING W.L.L proudly serves a diverse clientele across Qatar, including supermarkets, restaurants, hotels.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <MarketCard
               image="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600&q=80"
               icon={<Package />}
@@ -364,11 +364,7 @@ const Home = () => {
               icon={<Globe />}
               title="Hotels"
             />
-            <MarketCard
-              image="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80"
-              icon={<Award />}
-              title="Catering"
-            />
+           
           </div>
         </div>
       </section>
