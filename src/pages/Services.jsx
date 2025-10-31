@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 
 import { Truck, Package, Snowflake, Globe, Clock, Shield, Users, TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
+import Footer from '../components/Footer';
 
 const Services = () => {
   const mainServices = [
@@ -221,7 +222,7 @@ const Services = () => {
         </div>
       </section>
 
-      <footer />
+     <Footer/>
     </div>
   );
 };

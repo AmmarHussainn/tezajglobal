@@ -441,7 +441,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="flex items-center space-x-3 mb-6">
-              <Leaf className="w-8 h-8 text-emerald-400" />
+              <img src="/logo.png" alt="TAZEJ GLOBAL TRADING W.L.L" className="h-12 w-auto" />
               <div>
                 <span className="text-xl font-bold text-white block">TAZEJ GLOBAL</span>
                 <span className="text-xs text-emerald-400 tracking-widest">TRADING W.L.L</span>

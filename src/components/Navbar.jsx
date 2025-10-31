@@ -31,13 +31,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
             <div className="relative">
-              <Leaf className="w-10 h-10 text-emerald-400" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
+              {/* <Leaf className="w-10 h-10 text-emerald-400" /> */}
+                <img src="/logo.png" alt="TAZEJ GLOBAL TRADING W.L.L" className="h-12 w-auto" />
+              {/* <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div> */}
             </div>
             <div>
               <span className="text-2xl font-bold text-white block leading-tight">TAZEJ GLOBAL</span>
               <span className="text-xs text-emerald-400 tracking-widest">TRADING W.L.L</span>
             </div>
+          
           </Link>
 
           <div className="hidden lg:flex space-x-1">
