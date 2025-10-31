@@ -26,7 +26,7 @@ const AboutUs = () => {
             <div className="inline-block mb-6 px-4 py-2 bg-emerald-500/20 border border-emerald-500/50 rounded-full">
               <span className="text-emerald-400 text-sm font-semibold">ABOUT TAZEJ GLOBAL</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Delivering Excellence in<br/>
               <span className="text-emerald-400">Fresh Produce</span>
             </h1>
