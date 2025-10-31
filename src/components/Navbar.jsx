@@ -36,7 +36,7 @@ const Navbar = () => {
               {/* <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div> */}
             </div>
             <div>
-              <span className="text-2xl font-bold text-white block leading-tight">TAZEJ GLOBAL</span>
+              <span className="text-2xl font-bold text-white block leading-tight">TAZEJ GLOBAL  <span className="text-sm pl-2 text-emerald-400 tracking-widest">تازج جلوبال  </span>   </span>
               <span className="text-xs text-emerald-400 tracking-widest">TRADING W.L.L</span>
             </div>
           
