@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Mail, MapPin, ChevronRight, Leaf, Award, Users, Package, Snowflake, Settings, ArrowRight, CheckCircle, TrendingUp, Globe, Shield, Clock } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, ChevronRight, Leaf, Award, Users, Package, Snowflake, Settings, ArrowRight, CheckCircle, TrendingUp, Globe, Shield, Clock, Rss } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -418,6 +418,8 @@ const Home = () => {
               address="Al Mirqab Mall, Al Mirqab Al Jadeed Street, Zone:39, Street: 840, Building: 53, Doha, Qatar"
               phone="+974 31245783"
               gradient="from-emerald-600 to-teal-600"
+               email= "ahsan@tazejglobal.com"
+                 website = "www.tazejglobal.com"
             />
             <ContactCard
               country="Pakistan"
@@ -425,6 +427,8 @@ const Home = () => {
               address="E-3, Farzana Building, Office No 1, Ground Floor, Shaheed e Millat Road, Karachi"
               phone="+92 321 8297672"
              gradient="from-emerald-600 to-teal-600"
+              email= "ahsan@tazejglobal.com"
+                 website = "www.tazejglobal.com"
             />
             <ContactCard
               country="Pakistan"
@@ -432,6 +436,8 @@ const Home = () => {
               address="House #1226, 3rd Road, G-10/4, Islamabad"
               phone="+92 346 5318763"
               gradient="from-emerald-600 to-teal-600"
+               email= "ahsan@tazejglobal.com"
+                 website = "www.tazejglobal.com"
             />
           </div>
         </div>
@@ -561,7 +567,7 @@ const TeamCard = ({ name, role, image }) => (
     </div>
   </div>
 );
-const ContactCard = ({ country, office, address, phone, gradient }) => (
+const ContactCard = ({ country, office, address, phone, gradient ,email ,website}) => (
   <div className={`bg-gradient-to-br ${gradient} p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105`}>
     <div className="mb-6">
       <div className="inline-block px-3 py-1 bg-white/20 rounded-full mb-4">
@@ -578,6 +584,16 @@ const ContactCard = ({ country, office, address, phone, gradient }) => (
         <Phone className="w-6 h-6 text-white flex-shrink-0" />
         <p className="text-white/90 font-semibold">{phone}</p>
       </div>
+
+          <div className="flex items-center space-x-3">
+           
+          <Rss className="text-white flex-shrink-0"  />
+          <p className="text-white/90 font-semibold">{website}</p>
+        </div>
+        <div className="flex items-center space-x-3">
+          <Mail className="text-white flex-shrink-0"  />
+          <p className="text-white/90 font-semibold">{email}</p>
+        </div>
     </div>
   </div>
 );
