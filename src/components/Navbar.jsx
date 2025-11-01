@@ -47,14 +47,17 @@ const Navbar = () => {
             </div>
             <div>
               <span className="text-2xl font-bold text-white block leading-tight">
-                TAZEJ GLOBAL{" "}
+                TAZEJ GLOBAL
                 <span className="text-sm md:text-xl pl-2 text-emerald-400 tracking-widest">
-                  تازج جلوبال{" "}
-                </span>{" "}
+                  تازج جلوبال
+                </span>
               </span>
-              <span className="text-xs text-emerald-400 tracking-widest">
+              <span className="text-xl font-bold text-white tracking-widest">
                 TRADING W.L.L
               </span>
+              <span className="text-sm md:text-xl pl-2 text-emerald-400 tracking-widest">
+للتجارة ذ.م.م
+                </span>
             </div>
           </Link>
 

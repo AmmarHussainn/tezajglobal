@@ -696,10 +696,7 @@ const ContactCard = ({
         <p className="text-white/90 font-semibold">{phone}</p>
       </div>
 
-      <div className="flex items-center space-x-3">
-        <Rss className="text-white flex-shrink-0" />
-        <p className="text-white/90 font-semibold">{website}</p>
-      </div>
+    
       {email && (
         <div className="flex items-center space-x-3">
           <Mail className="text-white flex-shrink-0" />
@@ -712,6 +709,11 @@ const ContactCard = ({
           <p className="text-white/90 font-semibold">{email2}</p>
         </div>
       )}
+
+        <div className="flex items-center space-x-3">
+        <Rss className="text-white flex-shrink-0" />
+        <p className="text-white/90 font-semibold">{website}</p>
+      </div>
     </div>
   </div>
 );

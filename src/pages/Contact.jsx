@@ -479,10 +479,7 @@ const OfficeCard = ({
           <p className="text-gray-900 font-semibold text-sm">{phone}</p>
         </div>
 
-        <div className="flex items-center space-x-3">
-          <Rss className="text-emerald-600 flex-shrink-0" size={18} />
-          <p className="text-gray-900 font-semibold text-sm">{website}</p>
-        </div>
+       
         {email && (
           <div className="flex items-center space-x-3">
             <Mail className="text-emerald-600 flex-shrink-0" size={18} />
@@ -495,6 +492,11 @@ const OfficeCard = ({
             <p className="text-gray-900 text-sm">{email2}</p>
           </div>
         )}
+
+         <div className="flex items-center space-x-3">
+          <Rss className="text-emerald-600 flex-shrink-0" size={18} />
+          <p className="text-gray-900 font-semibold text-sm">{website}</p>
+        </div>
         <div className="flex items-center space-x-3">
           <Clock className="text-emerald-600 flex-shrink-0" size={18} />
           <p className="text-gray-600 text-sm">{hours}</p>
