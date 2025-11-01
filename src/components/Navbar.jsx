@@ -52,10 +52,10 @@ const Navbar = () => {
                   تازج جلوبال
                 </span>
               </span>
-              <span className="text-xl font-bold text-white tracking-widest">
+              <span className="text-lg font-bold text-white tracking-widest">
                 TRADING W.L.L
               </span>
-              <span className="text-sm md:text-xl pl-2 text-emerald-400 tracking-widest">
+              <span className="text-sm md:text-xl pl-4 text-emerald-400 tracking-widest">
 للتجارة ذ.م.م
                 </span>
             </div>
