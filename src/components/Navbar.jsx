@@ -46,13 +46,13 @@ const Navbar = () => {
               {/* <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div> */}
             </div>
             <div>
-              <span className='text-2xl font-bold text-white block leading-tight'>
+              <span className='md:text-2xl font-bold text-white block leading-tight'>
                 TAZEJ GLOBAL
                 <span className='text-sm md:text-xl pl-2 text-emerald-400 tracking-widest'>
                   طازج جلوبال
                 </span>
               </span>
-              <span className='text-lg font-bold text-white tracking-widest'>
+              <span className='md:text-lg font-bold text-white tracking-widest'>
                 TRADING W.L.L
               </span>
               <span className='text-sm md:text-xl pl-4 text-emerald-400 tracking-widest'>
